@@ -145,7 +145,7 @@ export default function Index() {
         <div className="block lg:absolute lg:w-[40%] h-full bg-black opacity-70 p-6 lg:p-4">
           <p className='text-2xl font-medium mb-4'>Custom Web Solutions? Count on us.</p>
           <p className="text-sm lg:text-lg">
-            Coderevo provides a full range of services to boost clients' online presence and drive business growth. With custom web solutions, web development, SEO services, and social media integration and management, we help clients create engaging websites, improve search engine visibility, and connect with their audience. Our approach delivers cutting-edge strategies for long-term success.
+            Coderevo provides a full range of services to boost clients online presence and drive business growth. With custom web solutions, web development, SEO services, and social media integration and management, we help clients create engaging websites, improve search engine visibility, and connect with their audience. Our approach delivers cutting-edge strategies for long-term success.
           </p>
         </div>
       </div>
