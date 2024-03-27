@@ -5,7 +5,7 @@ import { Menu, X, Settings, LifeBuoy, Lock, Code, Users, Search, PenTool } from 
 import ReviewsSlider from '@/components/ReviewSlider';
 
 
-export default function index() {
+export default function Index() {
 
   const [isOpen, setIsOpen] = useState(false);
   const images = ['/001.jpg', '/002.jpg', '/003.jpg'];
