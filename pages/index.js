@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React, {useState} from 'react'
 import { Menu, X, Settings, LifeBuoy, Lock, Code, Users, Search, PenTool } from 'react-feather';
-import ReviewsSlider from '@/components/ReviewSlider';
+import ReviewsSlider from '../components/ReviewSlider';
 
 
 export default function Index() {
