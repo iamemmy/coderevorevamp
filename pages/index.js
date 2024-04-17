@@ -159,7 +159,7 @@ export default function Index() {
         <h2 className="text-xl lg:text-2xl font-bold mb-4 w-full lg:w-[40%] text-start lg:text-center"><span className='text-blue-500'>Services</span> We are Providing To Our Customers</h2>
         <div className='flex flex-col lg:flex-row lg:justify-center items-start space-x-0 lg:space-x-4 px-0 space-y-4 lg:space-y-0 lg:px-8 pt-4'>
           {services.map((service, index) => (
-            <div key={index} className='bg-gray-800 px-4 pt-4 pb-8'>
+            <div key={index} className='bg-gray-800 px-4 pt-4 pb-8 rounded-2xl'>
               <p className='mb-4'>{service.icon}</p>
               <div className='border-b pb-4'>
                 <p className='text-xl font-medium text-white mb-4'>{service.title}</p>

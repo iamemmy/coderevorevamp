@@ -33,7 +33,7 @@ const ReviewsSlider = ({ reviews }) => {
   return (
     <Slider {...settings}>
       {reviews.map((review, index) => (
-        <div key={index} className="review text-white py-4 px-4 border border-gray-600">
+        <div key={index} className="review text-white py-4 px-4 border border-gray-600 rounded-2xl">
           <p className="review-text text-white mb-4">&quot;{review.text}&quot;</p>
           <p className="review-author text-gray-300">- {review.author} (<span className='text-yellow-500 italic'>{review.role}</span>)</p>
         </div>
