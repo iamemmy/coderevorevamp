@@ -78,7 +78,7 @@ export default function Index() {
 
         {/* Responsive Menu for Mobile */}
         {isOpen && (
-          <div className="lg:hidden absolute top-14 right-4 z-50 flex flex-col space-y-4 bg-gray-900 p-4 rounded-lg">
+          <div className="lg:hidden absolute top-16 right-4 z-50 flex flex-col space-y-4 bg-gray-900 p-4 rounded-lg">
             <Link href="#" className="text-white">&#8226; Home</Link>
             <Link href="#" className="text-white">&#8226; About</Link>
             <Link href="#" className="text-white">&#8226; Services</Link>
