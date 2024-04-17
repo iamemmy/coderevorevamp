@@ -37,9 +37,9 @@ export default function Footer() {
                         <li className='mb-2'>Graphics</li>
                     </ul>
                 </div>
-                <div className="flex justify-start items-center space-x-2 w-full mt-6 mb-10 md:mb-0 lg:mb-0">
-                    <input type="email" placeholder="Enter your email" className="px-4 py-2 border border-gray-300 rounded-md" />
-                    <button className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">Subscribe</button>
+                <div className="flex flex-col md:flex-row lg:flex-row justify-start items-center space-x-0 md:space-x-2 lg:space-x-2 space-y-2 md:space-y-0 lg:space-y-0 w-full mt-6 mb-10 md:mb-0 lg:mb-0">
+                    <input type="email" placeholder="Enter your email" className="w-full md:w-auto lg:w-auto px-4 py-2 border border-gray-300 rounded-md" />
+                    <button className="w-full md:w-auto lg:w-auto px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">Subscribe</button>
                 </div>
             </div>
         </div>
