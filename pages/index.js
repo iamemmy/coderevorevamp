@@ -70,8 +70,8 @@ export default function Index() {
 
           {/* Full Menu for Large Screens */}
           <div className='hidden lg:flex item-center space-x-4'>
-            <Link href="#" className="text-white">&#8226; Home</Link>
-            <Link href="#" className="text-white">&#8226; About</Link>
+            <Link href="/" className="text-white">&#8226; Home</Link>
+            <Link href="/about" className="text-white">&#8226; About</Link>
             <Link href="#" className="text-white">&#8226; Services</Link>
           </div>
         </div>
@@ -79,8 +79,8 @@ export default function Index() {
         {/* Responsive Menu for Mobile */}
         {isOpen && (
           <div className="lg:hidden absolute top-16 right-4 z-50 flex flex-col space-y-4 bg-gray-900 p-4 rounded-lg">
-            <Link href="#" className="text-white">&#8226; Home</Link>
-            <Link href="#" className="text-white">&#8226; About</Link>
+            <Link href="/" className="text-white">&#8226; Home</Link>
+            <Link href="/about" className="text-white">&#8226; About</Link>
             <Link href="#" className="text-white">&#8226; Services</Link>
           </div>
         )}
@@ -132,7 +132,7 @@ export default function Index() {
           <div className="bg-blue-500 w-2 h-2 rounded-full mb-2"></div>
           <p className='text-sm text-gray-700 font-medium mb-2'>About Code Revolution</p>
           <h2 className="text-xl lg:text-2xl font-bold mb-4">We are a Leading-edge <br /> <span className='text-blue-500'>Web Development and Social Media</span> <br /> Force, Driving Success</h2>
-          <p className="text-blue-500 text-sm mb-6">
+          <p className="text-gray-400 text-sm mb-6">
             We use technology to empower and create positive change. We design user-friendly, innovative solutions with a commitment to ethics and responsibility. Our goal is to help businesses and individuals thrive in the digital age.
           </p>
           <Link href="#" className="text-white bg-blue-500 px-4 py-2 w-[fit-content]">Learn more</Link>
@@ -146,7 +146,7 @@ export default function Index() {
         </div>
         <div className="block lg:absolute lg:w-[40%] h-full bg-black opacity-70 p-6 lg:p-4">
           <p className='text-2xl font-medium mb-4'>Custom Web Solutions? Count on us.</p>
-          <p className="text-sm lg:text-lg">
+          <p className="text-sm lg:text-lg text-gray-400">
             Code Revolution provides a full range of services to boost clients online presence and drive business growth. With custom web solutions, web development, SEO services, and social media integration and management, we help clients create engaging websites, improve search engine visibility, and connect with their audience. Our approach delivers cutting-edge strategies for long-term success.
           </p>
         </div>
@@ -163,7 +163,7 @@ export default function Index() {
               <p className='mb-4'>{service.icon}</p>
               <div className='border-b pb-4'>
                 <p className='text-xl font-medium text-white mb-4'>{service.title}</p>
-                <p>{service.description}</p>
+                <p className='text-sm lg:text-base'>{service.description}</p>
               </div>
             </div>
           ))}

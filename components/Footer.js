@@ -18,19 +18,19 @@ export default function Footer() {
             <div className="w-full md:w-1/2 lg:w-2/3">
                 <div className="flex flex-col">
                     <p className='text-base'>Lets start working together</p>
-                    <p className="text-2xl mt-2">info@coderevo.com</p>
+                    <p className="text-sm">info@coderevo.com</p>
                     <p className='text-sm lg:text-base mt-8'>&copy;Copyright 2024 by Code Revolution</p>
                 </div>
             </div>
             <div className="w-full md:w-1/2 lg:w-1/3">
                 <div className="grid grid-cols-2">
-                    <ul className="list-none">
+                    <ul className="list-none text-sm lg:text-base">
                         <li className='mb-2'>Home</li>
                         <li className='mb-2'>About</li>
                         <li className='mb-2'>Contact</li>
                         <li className='mb-2'>Services</li>
                     </ul>
-                    <ul className="list-none">
+                    <ul className="list-none text-sm lg:text-base">
                         <li className='mb-2'>Web Development</li>
                         <li className='mb-2'>Advertising</li>
                         <li className='mb-2'>SEO Services</li>
