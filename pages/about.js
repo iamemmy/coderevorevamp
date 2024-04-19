@@ -4,7 +4,7 @@ import { Menu, X, Settings, LifeBuoy, Lock, Code, Users, Search, PenTool } from 
 import Image from 'next/image'
 
 
-export default function about() {
+export default function About() {
 
   const [isOpen, setIsOpen] = useState(false);
 
