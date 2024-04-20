@@ -53,7 +53,7 @@ export default function About() {
     <div>
     
         {/* Navbar and hero */}
-        <div className="relative bg-cover bg-center h-[60vh] md:h-[70vh] lg:h-[80vh] flex flex-col justify-center items-center" style={{backgroundImage: 'url("/image-2.jpg")'}}>
+        <div className="relative bg-cover bg-center h-[60vh] md:h-[70vh] lg:h-[80vh] flex flex-col justify-center items-center" style={{backgroundImage: 'url("/image-4.jpg")'}}>
         {/* Dark overlay */}
         <div className="absolute top-0 left-0 right-0 bottom-0 bg-black opacity-50"></div>
 
