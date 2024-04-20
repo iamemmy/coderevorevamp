@@ -200,7 +200,7 @@ export default function Index() {
         </div>
         <div class="w-full">
           <p className='mb-8 text-sm lg:text-base'>
-            For over 4 years, we've proudly served clients throughout Africa, delivering exceptional web design and development services. In addition to web design, we specialize in social media advertising, brand growth, page management, graphic design, and more. Contact us today to elevate your brand's digital presence and achieve your goals.
+            For over 4 years, we&apos;ve proudly served clients throughout Africa, delivering exceptional web design and development services. In addition to web design, we specialize in social media advertising, brand growth, page management, graphic design, and more. Contact us today to elevate your brand's digital presence and achieve your goals.
           </p>
           <Link href={'https://wa.link/teo1p3'} className='bg-blue-500 text-white px-4 py-3'>Get in touch</Link>
         </div>
