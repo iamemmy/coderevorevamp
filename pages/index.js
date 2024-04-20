@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import { Menu, X, Settings, LifeBuoy, Lock, Code, Users, Search, PenTool } from 'react-feather';
 import ReviewsSlider from '../components/ReviewSlider';
 import Footer from '@/components/Footer';
@@ -9,8 +9,16 @@ import Footer from '@/components/Footer';
 export default function Index() {
 
   const [isOpen, setIsOpen] = useState(false);
-  const images = ['/icon-6.jpg', '/icon-5.jpg', '/icon-8.jpg'];
+  const [showAnimation, setShowAnimation] = useState(true);
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowAnimation(false);
+    }, 1000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  const images = ['/icon-6.jpg', '/icon-5.jpg', '/icon-8.jpg'];
   const dataAttribute = [
     { text: "Personalised Solution", icon: <Settings /> },
     { text: "Reliable Customer Assistance", icon: <LifeBuoy /> },
@@ -56,7 +64,7 @@ export default function Index() {
 
         <div className="absolute top-4 left-0 right-0 px-8 lg:px-10 py-2 flex justify-between items-center w-full">
           <div className="font-bold text-white">
-            <Image src={'/logo.jpg'} className='rounded-full w-[50px] md:[60px] lg:w-[70px]' height={80} width={80} />
+            <Image src={'/logo.jpg'} alt='Image' className='rounded-full w-[50px] md:[60px] lg:w-[70px]' height={80} width={80} />
           </div>
 
           {/* Hamburger Icon for Mobile */}
@@ -72,7 +80,7 @@ export default function Index() {
           <div className='hidden lg:flex item-center space-x-4'>
             <Link href="/" className="text-white">&#8226; Home</Link>
             <Link href="/about" className="text-white">&#8226; About</Link>
-            <Link href="#" className="text-white">&#8226; Services</Link>
+            <Link href="/services" className="text-white">&#8226; Services</Link>
           </div>
         </div>
 
@@ -81,22 +89,31 @@ export default function Index() {
           <div className="lg:hidden absolute top-16 right-4 z-50 flex flex-col space-y-4 bg-gray-900 p-4 rounded-lg">
             <Link href="/" className="text-white">&#8226; Home</Link>
             <Link href="/about" className="text-white">&#8226; About</Link>
-            <Link href="#" className="text-white">&#8226; Services</Link>
+            <Link href="/services" className="text-white">&#8226; Services</Link>
           </div>
         )}
 
         <div className="text-left w-full pl-8 lg:pl-28 pr-8 lg:pr-10 z-40">
           <div className="font-bold text-2xl lg:text-4xl text-white mb-6 shadow-lg">Custom Web Solutions: <br /> Tailored for Your Business Needs.</div>
-          <Link href={'/'} className="font-bold text-white bg-blue-500 py-3 px-4 w-[fit-content] cursor-pointer hover:bg-blue-400">Get in Touch</Link>
+          <Link href={'https://wa.link/teo1p3'} className="font-bold text-white bg-blue-500 py-3 px-4 w-[fit-content] cursor-pointer hover:bg-blue-400">Get in Touch</Link>
         </div>
 
         <div className='z-50 absolute bottom-4 right-4 lg:right-auto lg:left-10 lg:bottom-[7.5vh] flex flex-col space-y-4'>
-          <Link href={'/'}><Image src={'/icon-1.png'}  height={25} width={25} alt='image'/></Link>
-          <Link href={'/'}><Image src={'/icon-2.png'}  height={25} width={25} alt='image'/></Link>
-          <Link href={'/'}><Image src={'/icon-3.png'}  height={25} width={25} alt='image'/></Link>
+          <Link href={'https://bit.ly/4aKwSVG'}><Image src={'/icon-1.png'}  height={25} width={25} alt='image'/></Link>
+          <Link href={'https://www.instagram.com/coderevo/'}><Image src={'/icon-2.png'}  height={25} width={25} alt='image'/></Link>
+          <Link href={'https://wa.link/teo1p3'}><Image src={'/icon-3.png'}  height={25} width={25} alt='image'/></Link>
         </div>
 
       </div>
+
+      {/* Animation Box */}
+       {showAnimation && (
+        <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-black z-50 opacity-80 overflow-hidden">
+            <div className="w-[20vw] h-[5px] bg-white rounded-3xl overflow-hidden">
+            <div className="animate-box bg-blue-500 h-full"></div>
+            </div>
+        </div>
+      )}
 
       {/* Attributes */}
       <div className="flex flex-col lg:flex-row justify-center text-white p-2 lg:p-6">
@@ -135,7 +152,7 @@ export default function Index() {
           <p className="text-gray-400 text-sm mb-6">
             We use technology to empower and create positive change. We design user-friendly, innovative solutions with a commitment to ethics and responsibility. Our goal is to help businesses and individuals thrive in the digital age.
           </p>
-          <Link href="#" className="text-white bg-blue-500 px-4 py-2 w-[fit-content]">Learn more</Link>
+          <Link href="https://wa.link/teo1p3" className="text-white bg-blue-500 px-4 py-2 w-[fit-content]">Learn more</Link>
         </div>
       </div>
 
@@ -169,6 +186,26 @@ export default function Index() {
           ))}
         </div>
       </div>
+
+      <div class="w-full h-auto md:h-auto lg:h-[50vh] flex flex-col md:flex-row lg:flex-row space-x-0 md:space-x-3 lg:space-x-2 text-white pt-0 pb-10 lg:pt-8 lg:pb-8 px-6 lg:px-8 ">
+        <div class="w-full h-full mb-6 lg:mb-0">
+          <div class="h-full w-full lg:w-[70%] mx-auto rounded-md overflow-hidden">
+            <iframe
+              src="https://www.youtube.com/embed/xZZDFbjNsbo?si=CNSQGwyl9ZlwzTYd"
+              title="YouTube video player"
+              allowfullscreen
+              class="w-full h-full"
+            ></iframe>
+          </div>
+        </div>
+        <div class="w-full">
+          <p className='mb-8 text-sm lg:text-base'>
+            For over 4 years, we've proudly served clients throughout Africa, delivering exceptional web design and development services. In addition to web design, we specialize in social media advertising, brand growth, page management, graphic design, and more. Contact us today to elevate your brand's digital presence and achieve your goals.
+          </p>
+          <Link href={'https://wa.link/teo1p3'} className='bg-blue-500 text-white px-4 py-3'>Get in touch</Link>
+        </div>
+      </div>
+
 
       {/* Reviews */}
       <div className='pt-4 pb-10 px-6 lg:px-8'>

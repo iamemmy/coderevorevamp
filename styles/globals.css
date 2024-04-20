@@ -6,6 +6,22 @@ body {
   background-color: #000000;
 }
 
+
+/* Animation Box */
+.animate-box {
+  animation: fillBackground 1s linear;
+}
+
+@keyframes fillBackground {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+
 .slick-prev {
   left: 0% !important;
 }

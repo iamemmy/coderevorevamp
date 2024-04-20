@@ -9,9 +9,9 @@ export default function Footer() {
         <div className='text-white w-full flex flex-col md:flex-row lg:flex-row justify-between items-center border-b border-gray-600 pb-8 space-y-4 md:space-y-0 lg:space-y-0'>
             <p className='font-medium text-3xl'>Code Revolution</p>
             <div className='flex justify-center items-center space-x-4'>
-            <Link href={'/'}><Image src={'/instagram.png'}  height={25} width={25} alt='image'/></Link>
-            <Link href={'/'}><Image src={'/facebook.png'}  height={25} width={25} alt='image'/></Link>
-            <Link href={'/'}><Image src={'/whatsapp.png'}  height={25} width={25} alt='image'/></Link>
+            <Link href={'https://www.instagram.com/coderevo/'}><Image src={'/instagram.png'}  height={25} width={25} alt='image'/></Link>
+            <Link href={'https://bit.ly/4aKwSVG'}><Image src={'/facebook.png'}  height={25} width={25} alt='image'/></Link>
+            <Link href={'https://wa.link/teo1p3'}><Image src={'/whatsapp.png'}  height={25} width={25} alt='image'/></Link>
             </div>
         </div>
         <div className="flex flex-col-reverse md:flex-row lg:flex-row justify-between pt-8 text-white">
