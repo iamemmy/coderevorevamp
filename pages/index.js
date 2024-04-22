@@ -20,9 +20,9 @@ export default function Index() {
 
   const images = ['/icon-6.jpg', '/icon-5.jpg', '/icon-8.jpg'];
   const dataAttribute = [
-    { text: "Personalised Solution", icon: <Settings /> },
-    { text: "Reliable Customer Assistance", icon: <LifeBuoy /> },
-    { text: "Secure System", icon: <Lock /> }
+    { text: "Personalised Solution", extra: "Crafting websites and social strategies tailored to your business needs, ensuring a personalized touch that sets you apart", icon: <Settings /> },
+    { text: "Reliable Customer Assistance", extra: "Accessible support ensuring prompt, dependable assistance whenever you need it, fostering trust and peace of mind for our clients", icon: <LifeBuoy /> },
+    { text: "Secure System", extra: "Your data safety is our priority. We implement robust security measures to safeguard your information throughout our collaboration", icon: <Lock /> }
   ];
 
   const services = [
@@ -98,10 +98,10 @@ export default function Index() {
           <Link href={'https://wa.link/teo1p3'} className="font-bold text-white bg-blue-500 py-3 px-4 w-[fit-content] cursor-pointer hover:bg-blue-400">Get in Touch</Link>
         </div>
 
-        <div className='z-50 absolute bottom-4 right-4 lg:right-auto lg:left-10 lg:bottom-[7.5vh] flex flex-col space-y-4'>
-          <Link href={'https://bit.ly/4aKwSVG'}><Image src={'/icon-1.png'}  height={25} width={25} alt='image'/></Link>
-          <Link href={'https://www.instagram.com/coderevo/'}><Image src={'/icon-2.png'}  height={25} width={25} alt='image'/></Link>
-          <Link href={'https://wa.link/teo1p3'}><Image src={'/icon-3.png'}  height={25} width={25} alt='image'/></Link>
+        <div className='z-50 fixed lg:absolute bottom-6 right-4 lg:right-8 lg:bottom-[7.5vh] flex flex-col space-y-2 lg:space-y-4'>
+          <Link href={'https://bit.ly/4aKwSVG'} className='bg-blue-500 border border-white rounded-full p-2 shadow-md'><Image src={'/icon-1.png'}  height={25} width={25} alt='image'/></Link>
+          <Link href={'https://www.instagram.com/coderevo/'} className='bg-pink-600 border border-white rounded-full p-2 shadow-md'><Image src={'/icon-2.png'}  height={25} width={25} alt='image'/></Link>
+          <Link href={'https://wa.link/teo1p3'} className='bg-green-500 border border-white rounded-full p-2 shadow-md'><Image src={'/icon-3.png'}  height={25} width={25} alt='image'/></Link>
         </div>
 
       </div>
@@ -120,14 +120,15 @@ export default function Index() {
         {images.map((imageUrl, index) => (
           <div key={index} className="flex-1 m-4">
             <div
-              className="bg-cover bg-center h-40 lg:h-60 flex items-end relative"
+              className="bg-cover bg-center h-56 lg:h-60 flex items-end relative"
               style={{ backgroundImage: `url(${imageUrl})` }}
             >
               <div className="bg-black bg-opacity-50 px-2 py-10 absolute bottom-4 left-4 right-4">
                 <div className='relative'>
-                  <div className="flex items-center space-x-2">
+                  <div className="flex flex-col items-center space-x-2">
                     <p className='absolute right-4 top-[-68px] bg-blue-500 text-white p-4 rounded-full'>{dataAttribute[index].icon}</p>
-                    <p className="text-white text-lg lg:text-xl font-medium">{dataAttribute[index].text}</p>
+                    <p className="text-white text-lg lg:text-xl font-medium mb-4">{dataAttribute[index].text}</p>
+                    <p className="text-white text-xs lg:text-sm text-center font-medium">{dataAttribute[index].extra}</p>
                   </div>
                 </div>
               </div>
