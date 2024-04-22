@@ -98,9 +98,9 @@ export default function Index() {
           <Link href={'https://wa.link/teo1p3'} className="font-bold text-white bg-blue-500 py-3 px-4 w-[fit-content] cursor-pointer hover:bg-blue-400">Get in Touch</Link>
         </div>
 
-        <div className='z-50 fixed lg:absolute bottom-6 right-4 lg:right-8 lg:bottom-[7.5vh] flex flex-col space-y-2 lg:space-y-4'>
-          <Link href={'https://bit.ly/4aKwSVG'} className='bg-blue-500 border border-white rounded-full p-2 shadow-md'><Image src={'/icon-1.png'}  height={25} width={25} alt='image'/></Link>
-          <Link href={'https://www.instagram.com/coderevo/'} className='bg-pink-600 border border-white rounded-full p-2 shadow-md'><Image src={'/icon-2.png'}  height={25} width={25} alt='image'/></Link>
+        <div className='z-50 fixed lg:absolute bottom-10 right-4 lg:right-8 lg:bottom-[7.5vh] flex flex-col space-y-2 lg:space-y-4'>
+          <Link href={'https://bit.ly/4aKwSVG'} className='hidden lg:block bg-blue-500 border border-white rounded-full p-2 shadow-md'><Image src={'/icon-1.png'}  height={25} width={25} alt='image'/></Link>
+          <Link href={'https://www.instagram.com/coderevo/'} className='hidden lg:block bg-pink-600 border border-white rounded-full p-2 shadow-md'><Image src={'/icon-2.png'}  height={25} width={25} alt='image'/></Link>
           <Link href={'https://wa.link/teo1p3'} className='bg-green-500 border border-white rounded-full p-2 shadow-md'><Image src={'/icon-3.png'}  height={25} width={25} alt='image'/></Link>
         </div>
 
