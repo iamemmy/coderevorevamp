@@ -28,7 +28,7 @@ export default function Index() {
   const services = [
     {
       title: "Web Development",
-      description: "Maximize your online presence with our social media management and advertising services. We expertly handle Facebook, Instagram, Twitter, and more, ensuring your brand shines across platforms. Let us elevate your social media game and drive results.",
+      description: "Building a great website means making it look awesome and work smoothly. Let us create a site that wows your visitors and shows off your brand perfectly. We are experts in making websites that are easy to use and look great on any device. Trust us to take your online presence to the next level.",
       icon: <Code />
     },
     {
