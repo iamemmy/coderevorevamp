@@ -1,9 +1,21 @@
-import { Html, Head, Main, NextScript } from "next/document";
+import { Html, Head, Main, NextScript } from 'next/document';
 
-export default function Document() {
+function MyDocument() {
   return (
     <Html lang="en">
       <Head />
+      <script
+        type="text/javascript"
+        dangerouslySetInnerHTML={{
+          __html: `
+            (function(c,l,a,r,i,t,y){
+              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "m1npoxss1m");
+          `,
+        }}
+      />
       <body>
         <Main />
         <NextScript />
@@ -11,3 +23,5 @@ export default function Document() {
     </Html>
   );
 }
+
+export default MyDocument;
