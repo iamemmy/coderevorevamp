@@ -144,7 +144,7 @@ export default function Index() {
       {/* Intro text */}
       <div className="flex flex-col lg:flex-row justify-center text-white p-2">
         <div className="flex-1 m-4 relative flex justify-center items-center">
-          <div className="rounded-full overflow-hidden w-72 h-72 bg-blue-500 z-40"> {/* Adjust width and height here */}
+          <div className="rounded-full overflow-hidden w-72 h-72 bg-blue-500 z-40">
             <Image src="/icon-9.jpg" alt="About Code Revolution" width={280} height={280} className="object-cover h-full w-full" />
           </div>
           <div className="absolute top-0 left-0 lg:left-24 bg-gray-800 w-24 h-24 rounded-full mt-2 ml-2"></div>

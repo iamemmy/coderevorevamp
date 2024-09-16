@@ -135,22 +135,22 @@ export default function About() {
           <h2 className="text-2xl font-bold text-center mb-6">Trusted by:</h2>
           <div className="grid grid-cols-2 md:grid-cols-6 gap-2 md:gap-8 lg:gap-8">
             <div className="rounded-full object-cover overflow-hidden m-auto">
-              <Image src="/t-1.png" height={100} width={100} alt="logo" className="w-[80px]" />
+              <Image src="/t-1.png" height={100} width={100} alt="Home hype logo" className="w-[80px]" />
             </div>
             <div className="rounded-full object-cover overflow-hidden m-auto">
-              <Image src="/t-2.png" height={100} width={100} alt="logo" />
+              <Image src="/t-2.png" height={100} width={100} alt="Precious the strategist logo" />
             </div>
             <div className="rounded-full object-cover overflow-hidden w-[50px] h-[50px] m-auto">
-              <Image src="/t-3.png" height={100} width={100} alt="logo" />
+              <Image src="/t-3.png" height={100} width={100} alt="S kashub logo" />
             </div>
             <div className="rounded-full object-cover overflow-hidden m-auto">
-              <Image src="/t-7.png" height={100} width={100} alt="logo" className="w-[130px]" />
+              <Image src="/t-7.png" height={100} width={100} alt="Vintage medical centre logo" className="w-[130px]" />
             </div>
             <div className="rounded-full object-cover overflow-hidden m-auto">
-              <Image src="/t-5.jpg" height={100} width={100} alt="logo" className="w-[130px]" />
+              <Image src="/t-5.jpg" height={100} width={100} alt="Fashion Apex logo" className="w-[130px]" />
             </div>
             <div className="rounded-full object-cover overflow-hidden m-auto">
-              <Image src="/t-6.png" height={100} width={100} alt="logo" />
+              <Image src="/t-6.png" height={100} width={100} alt="Green acres hospital logo" />
             </div>
           </div>
         </div>

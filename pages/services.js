@@ -61,7 +61,7 @@ export default function About() {
 
         <div className="absolute top-4 left-0 right-0 px-8 lg:px-10 py-2 flex justify-between items-center w-full">
             <div className="font-bold text-white">
-            <Image src={'/logo.jpg'} className='rounded-full w-[50px] md:[60px] lg:w-[70px]' height={80} width={80} />
+            <Image src={'/logo.jpg'} alt='Coderevo logo' className='rounded-full w-[50px] md:[60px] lg:w-[70px]' height={80} width={80} />
             </div>
 
             {/* Hamburger Icon for Mobile */}
@@ -144,10 +144,10 @@ export default function About() {
             </div>
         </div>
         <div className="flex-1 m-4 relative flex justify-center items-center">
-            <div className="rounded-full w-72 h-72 bg-blue-500 z-20 flex justify-center items-center"> {/* Adjust width and height here */}
+            <div className="rounded-full w-72 h-72 bg-blue-500 z-20 flex justify-center items-center">
             <div className='bg-black rounded-full w-64 h-64 z-30 flex justify-center items-center'>
                 <div className='rounded-full overflow-hidden w-60 h-60 z-40'>
-                    <Image src="/icon-5.jpg" alt="Profile" width={280} height={280} className="object-cover h-full w-full" />
+                    <Image src="/icon-5.jpg" alt="Tech image" width={280} height={280} className="object-cover h-full w-full" />
                 </div>
             </div>
             </div>
