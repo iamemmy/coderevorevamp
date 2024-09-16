@@ -3,7 +3,8 @@ import React, {useState, useEffect} from 'react'
 import { Menu, X } from 'react-feather';
 import Image from 'next/image'
 import ReviewsSlider from '@/components/ReviewSlider';
-import Footer from '@/components/Footer';
+import Footer from '../components/Footer';
+import Head from 'next/head';
 
 
 export default function About() {
@@ -26,7 +27,9 @@ export default function About() {
 
   return (
     <div>
-    
+      <Head>
+        <title>Home | About us</title>
+      </Head>
       {/* Navbar and hero */}
       <div className="relative bg-cover bg-center h-[60vh] md:h-[70vh] lg:h-[80vh] flex flex-col justify-center items-center" style={{backgroundImage: 'url("/image-2.jpg")'}}>
         {/* Dark overlay */}
@@ -34,7 +37,7 @@ export default function About() {
 
         <div className="absolute top-4 left-0 right-0 px-8 lg:px-10 py-2 flex justify-between items-center w-full">
           <div className="font-bold text-white">
-            <Image src={'/logo.jpg'} className='rounded-full w-[50px] md:[60px] lg:w-[70px]' height={80} width={80} />
+            <Image src={'/logo.jpg'} alt="about Coderevo" className='rounded-full w-[50px] md:[60px] lg:w-[70px]' height={80} width={80} />
           </div>
 
           {/* Hamburger Icon for Mobile */}
@@ -82,11 +85,11 @@ export default function About() {
       <div className="flex flex-col md:flex-row lg:flex-row justify-center text-white p-2 mt-0 md:mt-6 lg:mt-6">
         <div className="flex-1 m-0 md:m-4 lg:m-4 relative flex justify-center items-center">
             <div className='relative w-full flex justify-end items-end'>
-                <div className="hidden md:block lg:block overflow-hidden w-full h-full md:w-72 lg:w-72 md:h-72 lg:h-72 bg-blue-500 z-40"> {/* Adjust width and height here */}
-                    <Image src="/image-1.jpg" alt="Profile" width={280} height={280} className="object-cover h-full w-full" />
+                <div className="hidden md:block lg:block overflow-hidden w-full h-full md:w-72 lg:w-72 md:h-72 lg:h-72 bg-blue-500 z-40">
+                    <Image src="/image-1.jpg" alt="About Coderevolution" width={280} height={280} className="object-cover h-full w-full" />
                 </div>
-                <div className="hidden md:block lg:block absolute top-36 right-28 overflow-hidden w-72 h-72 z-40"> {/* Adjust width and height here */}
-                    <Image src="/image-3.jpg" alt="Profile" width={280} height={280} className="object-cover h-[200px] w-[180px]" />
+                <div className="hidden md:block lg:block absolute top-36 right-28 overflow-hidden w-72 h-72 z-40">
+                    <Image src="/image-3.jpg" alt="About Coderevolution" width={280} height={280} className="object-cover h-[200px] w-[180px]" />
                 </div>
             </div>
             <div className="absolute -bottom-16 right-4 lg:top-8 lg:left-36 bg-gray-800 w-12 h-12 rounded-full mt-2 ml-2"></div>

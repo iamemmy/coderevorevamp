@@ -10,8 +10,8 @@ export default function Footer() {
             <p className='font-medium text-3xl'>Code Revolution</p>
             <div className='flex justify-center items-center space-x-4'>
             <Link href={'https://www.instagram.com/coderevo/'}><Image src={'/instagram.png'}  height={25} width={25} alt='image'/></Link>
-            <Link href={'https://bit.ly/4aKwSVG'}><Image src={'/facebook.png'}  height={25} width={25} alt='image'/></Link>
-            <Link href={'https://wa.link/teo1p3'}><Image src={'/whatsapp.png'}  height={25} width={25} alt='image'/></Link>
+            <Link href={'https://bit.ly/4aKwSVG'}><Image src={'/facebook.png'}  height={25} width={25} alt='coderevo on facebook'/></Link>
+            <Link href={'https://wa.link/teo1p3'}><Image src={'/whatsapp.png'}  height={25} width={25} alt='coderevo on whatsapp'/></Link>
             </div>
         </div>
         <div className="flex flex-col-reverse md:flex-row lg:flex-row justify-between pt-8 text-white">

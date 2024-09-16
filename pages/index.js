@@ -3,7 +3,8 @@ import Link from 'next/link'
 import React, {useState, useEffect} from 'react'
 import { Menu, X, Settings, LifeBuoy, Lock, Code, Users, Search, PenTool } from 'react-feather';
 import ReviewsSlider from '../components/ReviewSlider';
-import Footer from '@/components/Footer';
+import Footer from '../components/Footer';
+import Head from 'next/head';
 
 
 export default function Index() {
@@ -56,6 +57,9 @@ export default function Index() {
   return (
     
     <>
+      <Head>
+        <title>Home | Coderevo</title>
+      </Head>
 
       {/* Navbar and hero */}
       <div className="relative bg-cover bg-center h-[60vh] md:h-[70vh] lg:h-[80vh] flex flex-col justify-center items-center" style={{backgroundImage: 'url("/002.jpg")'}}>
@@ -64,7 +68,7 @@ export default function Index() {
 
         <div className="absolute top-4 left-0 right-0 px-8 lg:px-10 py-2 flex justify-between items-center w-full">
           <div className="font-bold text-white">
-            <Image src={'/logo.jpg'} alt='Image' className='rounded-full w-[50px] md:[60px] lg:w-[70px]' height={80} width={80} />
+            <Image src={'/logo.jpg'} alt='Custom web solutions by Coderevo' className='rounded-full w-[50px] md:[60px] lg:w-[70px]' height={80} width={80} />
           </div>
 
           {/* Hamburger Icon for Mobile */}
@@ -100,8 +104,8 @@ export default function Index() {
 
         <div className='z-50 fixed lg:absolute bottom-10 right-4 lg:right-8 lg:bottom-[7.5vh] flex flex-col space-y-2 lg:space-y-4'>
           <Link href={'https://bit.ly/4aKwSVG'} className='hidden lg:block bg-blue-500 border border-white rounded-full p-2 shadow-md'><Image src={'/icon-1.png'}  height={25} width={25} alt='image'/></Link>
-          <Link href={'https://www.instagram.com/coderevo/'} className='hidden lg:block bg-pink-600 border border-white rounded-full p-2 shadow-md'><Image src={'/icon-2.png'}  height={25} width={25} alt='image'/></Link>
-          <Link href={'https://wa.link/teo1p3'} className='bg-green-500 border border-white rounded-full p-2 shadow-md'><Image src={'/icon-3.png'}  height={25} width={25} alt='image'/></Link>
+          <Link href={'https://www.instagram.com/coderevo/'} className='hidden lg:block bg-pink-600 border border-white rounded-full p-2 shadow-md'><Image src={'/icon-2.png'}  height={25} width={25} alt='Coderevo instagram page'/></Link>
+          <Link href={'https://wa.link/teo1p3'} className='bg-green-500 border border-white rounded-full p-2 shadow-md'><Image src={'/icon-3.png'}  height={25} width={25} alt='Coderevo: message us on whatsapp'/></Link>
         </div>
 
       </div>
@@ -141,7 +145,7 @@ export default function Index() {
       <div className="flex flex-col lg:flex-row justify-center text-white p-2">
         <div className="flex-1 m-4 relative flex justify-center items-center">
           <div className="rounded-full overflow-hidden w-72 h-72 bg-blue-500 z-40"> {/* Adjust width and height here */}
-            <Image src="/icon-9.jpg" alt="Profile" width={280} height={280} className="object-cover h-full w-full" />
+            <Image src="/icon-9.jpg" alt="About Code Revolution" width={280} height={280} className="object-cover h-full w-full" />
           </div>
           <div className="absolute top-0 left-0 lg:left-24 bg-gray-800 w-24 h-24 rounded-full mt-2 ml-2"></div>
           <div className="absolute bottom-0 left-10 bg-blue-500 w-8 h-8 rounded-full mt-2 ml-2"></div>
@@ -160,7 +164,7 @@ export default function Index() {
       {/* Web solutions */}
       <div className="relative flex flex-col items-end text-white h-auto lg:h-[50vh] w-full overflow-hidden mt-8">
         <div className="w-full h-full">
-          <Image src="/003.jpg" width={460} height={460} alt="Image" className="w-full h-full object-cover" />
+          <Image src="/003.jpg" width={460} height={460} alt="Coderevo: Custom Web Solutions" className="w-full h-full object-cover" />
         </div>
         <div className="block lg:absolute lg:w-[40%] h-full bg-black opacity-70 p-6 lg:p-4">
           <p className='text-2xl font-medium mb-4'>Custom Web Solutions? Count on us.</p>

@@ -3,7 +3,12 @@ import { Html, Head, Main, NextScript } from 'next/document';
 function MyDocument() {
   return (
     <Html lang="en">
-      <Head />
+      <Head>
+        <meta name="description" content="Code Revolution is a dynamic web development agency offering cutting-edge web solutions, UI/UX design, SEO services, and social media management. Grow your online presence with our expert team." />
+        <meta name="keywords" content="web development, UI/UX design, SEO, social media management, Code Revolution, website design, digital marketing, SEO services, social media advertising" />
+        <link rel="icon" href="/logo.jpg" />
+      </Head>
+
       <script
         type="text/javascript"
         dangerouslySetInnerHTML={{

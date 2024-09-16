@@ -2,8 +2,8 @@ import Link from 'next/link'
 import React, {useState, useEffect} from 'react'
 import { Menu, X, Code, Users, Search, PenTool } from 'react-feather';
 import Image from 'next/image'
-import Footer from '@/components/Footer';
-
+import Footer from '../components/Footer';
+import Head from 'next/head';
 
 export default function About() {
 
@@ -51,7 +51,9 @@ export default function About() {
 
   return (
     <div>
-    
+        <Head>
+          <title>Home | Services</title>
+        </Head>
         {/* Navbar and hero */}
         <div className="relative bg-cover bg-center h-[60vh] md:h-[70vh] lg:h-[80vh] flex flex-col justify-center items-center" style={{backgroundImage: 'url("/image-4.jpg")'}}>
         {/* Dark overlay */}
