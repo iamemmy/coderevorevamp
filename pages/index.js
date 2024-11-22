@@ -85,6 +85,7 @@ export default function Index() {
             <Link href="/" className="text-white">&#8226; Home</Link>
             <Link href="/about" className="text-white">&#8226; About</Link>
             <Link href="/services" className="text-white">&#8226; Services</Link>
+            <Link href="/portfolio" className="text-white">&#8226; Portfolio</Link>
           </div>
         </div>
 
@@ -94,6 +95,7 @@ export default function Index() {
             <Link href="/" className="text-white">&#8226; Home</Link>
             <Link href="/about" className="text-white">&#8226; About</Link>
             <Link href="/services" className="text-white">&#8226; Services</Link>
+            <Link href="/portfolio" className="text-white">&#8226; Portfolio</Link>
           </div>
         )}
 
@@ -192,18 +194,18 @@ export default function Index() {
         </div>
       </div>
 
-      <div class="w-full h-auto md:h-auto lg:h-[50vh] flex flex-col md:flex-row lg:flex-row space-x-0 md:space-x-3 lg:space-x-2 text-white pt-0 pb-10 lg:pt-8 lg:pb-8 px-6 lg:px-8 ">
-        <div class="w-full h-full mb-6 lg:mb-0">
-          <div class="h-full w-full lg:w-[70%] mx-auto rounded-md overflow-hidden">
+      <div className="w-full h-auto md:h-auto lg:h-[50vh] flex flex-col md:flex-row lg:flex-row space-x-0 md:space-x-3 lg:space-x-2 text-white pt-0 pb-10 lg:pt-8 lg:pb-8 px-6 lg:px-8 ">
+        <div className="w-full h-full mb-6 lg:mb-0">
+          <div className="h-full w-full lg:w-[70%] mx-auto rounded-md overflow-hidden">
             <iframe
               src="https://www.youtube.com/embed/xZZDFbjNsbo?si=CNSQGwyl9ZlwzTYd"
               title="YouTube video player"
               allowfullscreen
-              class="w-full h-full"
+              className="w-full h-full"
             ></iframe>
           </div>
         </div>
-        <div class="w-full">
+        <div className="w-full">
           <p className='mb-8 text-sm lg:text-base'>
             For over 4 years, we&apos;ve proudly served clients throughout Africa, delivering exceptional web design and development services. In addition to web design, we specialize in social media advertising, brand growth, page management, graphic design, and more. Contact us today to elevate your brand&apos;s digital presence and achieve your goals.
           </p>

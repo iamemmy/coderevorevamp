@@ -78,6 +78,7 @@ export default function About() {
             <Link href="/" className="text-white">&#8226; Home</Link>
             <Link href="/about" className="text-white">&#8226; About</Link>
             <Link href="/services" className="text-white">&#8226; Services</Link>
+            <Link href="/portfolio" className="text-white">&#8226; Portfolio</Link>
             </div>
         </div>
 
@@ -87,11 +88,12 @@ export default function About() {
             <Link href="/" className="text-white">&#8226; Home</Link>
             <Link href="/about" className="text-white">&#8226; About</Link>
             <Link href="/services" className="text-white">&#8226; Services</Link>
+            <Link href="/portfolio" className="text-white">&#8226; Portfolio</Link>
             </div>
         )}
 
         <div className="text-center w-full pl-8 lg:pl-28 pr-8 lg:pr-10 z-40">
-            <div className="font-bold text-2xl lg:text-4xl text-white mb-6 shadow-lg"><span className='text-yellow-500 text-sm'>Home /</span> Services</div>
+            <div className="font-bold text-2xl lg:text-4xl text-white mb-6"><span className='text-yellow-500 text-sm'>Home /</span> Services</div>
         </div>
 
         </div>

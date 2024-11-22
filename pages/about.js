@@ -54,6 +54,7 @@ export default function About() {
             <Link href="/" className="text-white">&#8226; Home</Link>
             <Link href="/about" className="text-white">&#8226; About</Link>
             <Link href="/services" className="text-white">&#8226; Services</Link>
+            <Link href="/portfolio" className="text-white">&#8226; Portfolio</Link>
           </div>
         </div>
 
@@ -63,11 +64,12 @@ export default function About() {
             <Link href="/" className="text-white">&#8226; Home</Link>
             <Link href="/about" className="text-white">&#8226; About</Link>
             <Link href="/services" className="text-white">&#8226; Services</Link>
+            <Link href="/portfolio" className="text-white">&#8226; Portfolio</Link>
           </div>
         )}
 
         <div className="text-center w-full pl-8 lg:pl-28 pr-8 lg:pr-10 z-40">
-          <div className="font-bold text-2xl lg:text-4xl text-white mb-6 shadow-lg"><span className='text-yellow-500 text-sm'>Home /</span> About us</div>
+          <div className="font-bold text-2xl lg:text-4xl text-white mb-6"><span className='text-yellow-500 text-sm'>Home /</span> About us</div>
         </div>
 
       </div>
@@ -109,13 +111,13 @@ export default function About() {
 
       {/* Services marquee */}
       <marquee behavior="scroll" direction="left" scrollamount="5" className="mt-4 mb-4 md:mt-20 lg:mt-20 bg-gray-800 py-2">
-        <ul class="list-none m-0 p-0 text-white text-sm md:text-base lg:text-base">
-          <li class="inline-block mr-6">&#8226; Web design & development</li>
-          <li class="inline-block mr-6">&#8226; Social media advertising</li>
-          <li class="inline-block mr-6">&#8226; SEO services</li>
-          <li class="inline-block mr-6">&#8226; Social media management</li>
-          <li class="inline-block mr-6">&#8226; Graphics & design</li>
-          <li class="inline-block mr-6">&#8226; Web hosting services</li>
+        <ul className="list-none m-0 p-0 text-white text-sm md:text-base lg:text-base">
+          <li className="inline-block mr-6">&#8226; Web design & development</li>
+          <li className="inline-block mr-6">&#8226; Social media advertising</li>
+          <li className="inline-block mr-6">&#8226; SEO services</li>
+          <li className="inline-block mr-6">&#8226; Social media management</li>
+          <li className="inline-block mr-6">&#8226; Graphics & design</li>
+          <li className="inline-block mr-6">&#8226; Web hosting services</li>
         </ul>
       </marquee>
 
